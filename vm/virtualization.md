@@ -117,4 +117,7 @@ Container
 ```
 Host OS에서 그냥 구분 없이 돌아가면, 독립된 환경이 아니다.
 컨테이너 환경에서 독립되게 만들어주려면, Docker Engine(컨테이너화 시켜주는 engine)
-```
+
+수많은 서버가 모여 있는 센터- IDC (Internet Date Center)
+✔ 수많은 가상머신, 컨테이너 모여 있는 센터 - 클라우드
+서버들 속에 hypervisor, Container Engine이 만드는 VM, Container 운용, 관리
