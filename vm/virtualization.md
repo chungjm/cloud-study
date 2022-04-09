@@ -5,8 +5,9 @@
   <img src="img/vm-1.png" width="640"/>
 </p>
 
-> 하나의 CPU, Memory, I/O 장치를 Virtualization layer 에서 소프트웨어(Hypervisor) Physical 하드웨어를 독립적으로 논리적으로 하드웨어를 쪼개는 기술
-
+```
+Virtual Machine은 하드웨어 측면에서 하나의 CPU, Memory, I/O 장치를 Virtualization layer 에서 소프트웨어(Hypervisor) Physical 하드웨어를 독립적으로 논리적으로 하드웨어를 쪼개는 기술
+```
 
 ## Hypervisor
 `가상화를 시켜주는 소프트웨어`
@@ -88,3 +89,32 @@ QEMU는 사용자 공간 내에서 실행되고 가상 하드웨어 에뮬레이
 ```
 
 
+### Libvirt
+```
+가상화 플랫폼(하이퍼바이저)을 관리하는 오픈소스 라이브러리, 다양한 하이퍼바이저 환경을 통합적으로 위해 탄생
+
+Virtualization을 관리하는 API 라이브러리
+```
+
+
+### OS를 가상화?
+📌 컨테이너
+
+<p align="center">
+  <img src="img/vm-4.png" width="640"/>
+</p>
+
+VM
+- Host OS 위에서 Hypervisor를 통해 자원을 가상화 하여 VM을 동작
+
+- Host OS 위에 Guest OS 가 동작하는 구조
+
+Container
+- Host OS에서 프로세스를 위한 공간을 별도로 분리
+
+- 기본적인 Binary, Library 만을 guest os 대신 사용
+
+```
+Host OS에서 그냥 구분 없이 돌아가면, 독립된 환경이 아니다.
+컨테이너 환경에서 독립되게 만들어주려면, Docker Engine(컨테이너화 시켜주는 engine)
+```
